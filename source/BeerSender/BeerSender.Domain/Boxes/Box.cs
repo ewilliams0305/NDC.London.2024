@@ -58,7 +58,7 @@ public record CloseBox();
 
 public record BoxClosed(Box Box);
 
-public record FailedToCloseBox(Box box);
+public record FailedToCloseBox(Box Box);
 
 /// <summary>
 /// A box holds beer
