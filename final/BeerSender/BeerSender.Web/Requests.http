@@ -37,6 +37,16 @@ POST https://{{hostname}}:{{port}}/api/command
 Content-Type: application/json
 
 {
+  "$type": "Close_box",
+  "aggregate_id": "{{aggregate_id}}",
+  "command": { }
+}
+
+###
+POST https://{{hostname}}:{{port}}/api/command
+Content-Type: application/json
+
+{
   "$type": "Apply_shipping_label",
   "aggregate_id": "{{aggregate_id}}",
   "command": {
@@ -47,16 +57,7 @@ Content-Type: application/json
   }
 }
 
-###
 
-POST https://{{hostname}}:{{port}}/api/command
-Content-Type: application/json
-
-{
-  "$type": "Close_box",
-  "aggregate_id": "{{aggregate_id}}",
-  "command": { }
-}
 
 ###
 
